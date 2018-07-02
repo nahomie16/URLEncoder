@@ -11,16 +11,25 @@ namespace URLEncoder
             String input = Console.ReadLine();
             String result = "";
 
-            // int count = 0; // counts number of spaces 
+           // int count = 0; // counts number of spaces 
 
             for (int i = 0; i < input.Length; i++)
             {
-
                 if (Char.IsWhiteSpace(input[i]))
+              
                 {
                     result += "%20"; 
                     // count += 1; 
 
+                }
+                else if ()  {  // if input is control_char
+                    // print invalid 
+                
+                }
+                else if () //  input is delimeter 
+                { 
+                
+                    // Convert delimeter to "%3c" 
                 }
                 else
                 {
@@ -29,7 +38,7 @@ namespace URLEncoder
                 }
             }
             Console.WriteLine(result);
-            // Console.WriteLine("Number of spaces = {0} ", count);
+           //  Console.WriteLine("Number of spaces = {0} ", count);
 
 
             // Console.WriteLine(input); 
