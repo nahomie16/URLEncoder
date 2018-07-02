@@ -6,10 +6,13 @@ namespace URLEncoder
     {
         static void Main(string[] args)
         {
-
+         
             Console.WriteLine("Enter a sting: ");
             String input = Console.ReadLine();
             String result = "";
+            String [] blocks = new String[] { "{", "}", "|", "^", "[", "]", "`"};
+            String [] queryCharacters = new string[] { ";", "/", "?", ":", "@", "&", "=", "+", "$", ","};
+            String[] delimeter = new string[] { "<", ">", "#", "%", "\"" }; 
 
            // int count = 0; // counts number of spaces 
 
@@ -22,14 +25,25 @@ namespace URLEncoder
                     // count += 1; 
 
                 }
-                else if ()  {  // if input is control_char
+                else if (true)  {  // if input is control_char
                     // print invalid 
                 
                 }
-                else if () //  input is delimeter 
+                else if (true) //  input is delimeter 
                 { 
                 
                     // Convert delimeter to "%3c" 
+                }
+                else if (true) { // input is block 
+                       // convert to url encoded format 
+                
+                
+                }
+
+
+                else if (true) { // input is query_characters 
+                    // convert to url encoded format 
+
                 }
                 else
                 {
